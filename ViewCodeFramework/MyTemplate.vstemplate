@@ -1,0 +1,15 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <Name>View CodeFramework</Name>
+    <Description>Crea un view con wildcat sin layout</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>view.ico</Icon>
+    <DefaultName>View.xaml</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">View1.xaml</ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$.xaml\$fileinputname$.Wildcat.xaml" ReplaceParameters="true" DependentUpon="$fileinputname$.xaml">View1.Wildcat.xaml</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
